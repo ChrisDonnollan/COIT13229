@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="585.0" prefWidth="822.0" styleClass="root" stylesheets="@payroll.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.PayRollController">
+   <children>
+        
+        <Label fx:id="lblLast" layoutX="296.0" layoutY="41.0" text="Last Name" />
+        <Label fx:id="lblSalary" layoutX="24.0" layoutY="99.0" text="Salary" />
+        <TextField fx:id="txtFldFirstName" layoutX="103.0" layoutY="35.0" prefHeight="26.0" prefWidth="171.0" promptText="enter first name" />
+        <TextField fx:id="txtFldLastName" layoutX="386.0" layoutY="37.0" promptText="enter last name" />
+        
+        <TextField fx:id="txtFldSalary" layoutX="103.0" layoutY="95.0" promptText="enter salary" />
+        <Button fx:id="btnAddEmployee" layoutX="103.0" layoutY="149.0" mnemonicParsing="false" onAction="#AddEmployeeClicked" text="Register Employee" />
+        <Label fx:id="lblFirstName" layoutX="24.0" layoutY="41.0" prefHeight="18.0" prefWidth="66.0" text="First Name" />
+      
+      <Button fx:id="btnViewEmployee" layoutX="103.0" layoutY="210.0" mnemonicParsing="false" onAction="#viewEmployeeButtonClicked" text="View Employees" />
+      
+      <TextArea fx:id="txtAreaResult" layoutX="84.0" layoutY="249.0" prefHeight="214.0" prefWidth="649.0" promptText="Registered Employees" />
+      
+
+    </children>
+</AnchorPane>
